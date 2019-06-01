@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+  margin: 0; padding: 0;
+}
+body {
+  display: flex;
+  font: 16px/1.6 "Circe", "Open Sans", Arial, sans-serif;
+  color: #fff;
+  background: #1e1c33;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.all {
+  box-sizing: border-box;
+  max-height: 100%;
+  padding: 2rem;
+  overflow: auto;
+}
+.logo img {width: 215px;}
+.info h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 4rem 0 0;
+}
+.info p {font-size: 1.4em;}
+.counter {
+  color: #c7962a;
+  padding: 4rem 0;
+}
+.counter b {font-family: monospace;}
+
+/* iPhone etc. */
+@media only screen 
+and (max-width : 767px) {
+  body {font-size: 12px; line-height: 1.4;}
+  .logo img {width: 160px;}
+  .info h1 {margin-top: 3rem; font-size: 3rem; line-height: 1;}
+  .info p {font-size: 1rem;}
+  .counter {padding: 2.5rem 0;}
+}
+/*---*/

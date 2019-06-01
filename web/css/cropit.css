@@ -1,0 +1,152 @@
+#image-cropper {
+    overflow: hidden;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*.cropit-preview {*/
+    /*!* You can specify preview size in CSS *!*/
+    /*width: 400px;*/
+    /*height: 400px;*/
+/*}*/
+
+input.cropit-image-zoom-input {
+    position: relative;
+}
+
+.cropit-preview-background {
+    opacity: .2;
+}
+
+.cropit-image-loaded{
+    margin: 0 auto;
+}
+
+.controls-wrapper{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cropit-preview-image{
+    cursor: move;
+}
+
+.rotation-btns{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 40px;
+    display: inline;
+}
+
+.slider-wrapper{
+    transition: opacity 0.25s;
+    display: inline-block;
+    box-sizing: border-box;
+    webkit-box-sizing: border-box;
+}
+
+
+
+
+
+
+
+.cropit-image-zoom-input {
+    -webkit-appearance: none;
+    /*removes default webkit styles*/
+    /*border: 1px solid white; *//*fix for FF unable to apply focus style bug */
+    width: 300px;
+    /*required for proper track sizing in FF*/
+    max-width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: transparent;
+}
+
+.cropit-image-zoom-input::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 0;
+    border-radius: 3px;
+}
+
+.cropit-image-zoom-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #C7962A;
+    margin-top: -6px;
+}
+
+.cropit-image-zoom-input:focus {
+    outline: none;
+}
+/*
+.cropit-image-zoom-input:focus::-webkit-slider-runnable-track {
+background: #ccc;
+}
+*/
+
+.cropit-image-zoom-input::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 0;
+    border-radius: 3px;
+}
+
+.cropit-image-zoom-input::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #C7962A;
+    margin-top: -6px;
+}
+
+/*hide the outline behind the border*/
+.cropit-image-zoom-input:-moz-focusring {
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+.cropit-image-zoom-input::-ms-track {
+    width: 100%;
+    height: 5px;
+    background: transparent;
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    border-color: transparent;/*leave room for the larger thumb to overflow with a transparent border */
+    border-width: 6px 0;
+    color: transparent;/*remove default tick marks*/
+}
+.cropit-image-zoom-input::-ms-fill-lower {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.cropit-image-zoom-input::-ms-fill-upper {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.cropit-image-zoom-input::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #C7962A;
+    margin-top:1px;
+}
+.cropit-image-zoom-input:focus::-ms-fill-lower {
+    background: rgba(0, 0, 0, 0.5);
+}
+.cropit-image-zoom-input:focus::-ms-fill-upper {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+ul.js-images li{
+    /*max-width: 107px;*/
+    /*max-height: 107px;*/
+    overflow: hidden;
+}
